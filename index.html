@@ -15,36 +15,34 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./images/M4.png" width="500" height="500" >
+            <img src="./images/Hero.png" width="420" height="35" >
         </div>
-        <button class="nav-toggle" area-label="toggle navigtion">
+        <button class="nav-toggle" aria-label="toggle navigtion">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Current Projects</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-
-
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Intro-->
-    <section class="intro" id="home"></section>
+    <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Profile<strong>Matthew A. John</strong>
+            Hi, i am<strong>Matthew A. John</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Full-Stack Developer In Progress</p>
-        <img src="/images/USMC.png" width="350" height="500" alt="Matthew Photo Military" class="intro__img">
+        <p class="section__subtitle section__subtitle--intro ">front-end dev</p>
+        <img src="/images/test.png"  alt="Matthew Photo Military" class="intro__img">
     </section>
 
-    <!--About Me-->
+    <!--my services-->
 
-    <section class="About-me" id="about-me">
-        <h2 class="section__title section__subtitle--about">About Me:</h2>
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
         <div class="services">
             <div class="service">
                 <h3>Matthew</h3>
@@ -61,57 +59,80 @@
             </div>
         </div>
 
-        <a href="./images/download.jpg" class="btn">My Current Projects</a>
+        <a href="#work" class="btn">My Work</a>
     </section>
 
-    <!-- Current Projects-->
+        <!-- About me-->
      
         
-        <section class="current-projects" id="current">
-            <h2 class="section__title section_title--about">Current Projects</h2>
-            <p class="section_subtitle section_subtitle--about"></p>
+    <section class="about-me" id="about">
+        <h2 class="section__title section_title--about">Who I am</h2>
+        <p class="section_subtitle section__subtitle--about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis expedita maxime inventore quidem at quo quibusdam suscipit! Excepturi quasi repellat ex rem molestiae ea atque alias qui corrupti dolores.</p>
 
-            <div class="current-projects__body">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia velit cum corporis ratione delectus at est saepe cumque architecto exercitationem sint, iusto ea fugit quasi possimus reiciendis, voluptatibus aperiam ipsa.</p>
-            </div>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia velit cum corporis ratione delectus at est saepe cumque architecto exercitationem sint, iusto ea fugit quasi possimus reiciendis, voluptatibus aperiam ipsa.</p>
+        </div>
 
-            <img src="." alt="Current Photos of Project">
-        </section>
+        <img src="./images/USMC.png" alt="About me" class="about-me__img">
+    </section>
 
     
-        <section class="my-work" id="work">
-            <h2 class="section__title"></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero sunt totam, dolorum repellendus nobis, velit blanditiis ea consectetur dolore perspiciatis sapiente voluptatem nulla consequuntur? Similique illo temporibus provident excepturi?</p>
-        
-            <div class="portfolio">
-                <a href="#" class="portfolio__item">
-                    <img src="." alt="List of Repo Photos">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="." alt="List of Repo Photos">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="." alt="List of Repo Photos">
-                <a href="#" class="portfolio__item">
-                    <img src="." alt="List of Repo Photos"> 
-                </a>      
-            </div>
-        </section>
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+    
+        <div class="portfolio">
+            <!-- Portfolio Image 0 -->
+            <a href="#" class="portfolio__item">
+                <img src="./images/download.jpg" alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 1 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 2 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 3 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 4 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 5 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 6 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>
+            <!-- Portfolio Image 7 -->
+            <a href="#" class="portfolio__item">
+                <img src="." alt="List of Repo Photos" class="portfolio_img">
+            </a>               
+    
+        </a>      
+        </div>
+    </section>
 
  <!-- Footer-->
-        <footer>
-            <a href="mailto:contact@matthewj.dev" class="footer-link">Contact Matthew</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a class="socail-list__link"
-                   href=".">a</a></li>
-                <li class="social-list__item"><a class="socail-list__link"
-                    href=".">b</a></li>
-                <li class="social-list__item"><a class="socail-list__link"
-                    href=".">c</a></li>
-                <li class="social-list__item"><a class="socail-list__link"
-                    href=".">d</a></li>             
-            </ul>
-        </footer>
+    <footer>
+        <a href="mailto:contact@matthewj.dev" class="footer__link">Contact Matthew</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link"
+                href=".">a</a></li>
+            <li class="social-list__item"><a class="sociall-list__link"
+                href=".">b</a></li>
+            <li class="social-list__item"><a class="social-list__link"
+                href=".">c</a></li>
+            <li class="social-list__item"><a class="social-list__link"
+                href=".">d</a></li>             
+        </ul>
+    </footer>
 
     
 </body>
