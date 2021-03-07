@@ -74,11 +74,9 @@ strong {
 }
 
 .btn {
-
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: black;
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -86,6 +84,15 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    background: #43658D;
+    text-transform: uppercase;
+    width: 250px;
+    margin: 10px 0.5% 100px 0.5%;
+    border: 3px solid;
+    justify-content: center;
+    padding: 1px;
+    font-size: 1.5em;
+    
 
 
 }
@@ -290,6 +297,7 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    
 }
 
 
@@ -380,6 +388,14 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 
+}
+
+.about-me__body {
+    background: #43658D;
+}
+
+.about-me__body p {
+    background: #43658D;
 }
 
 .about-me__img {
