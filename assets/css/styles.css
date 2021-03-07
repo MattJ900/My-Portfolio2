@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    background: black;
 }
 
 
@@ -15,7 +16,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #43658D;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,8 +44,8 @@ html {
 }
 
 body {
-    background: var(--clr-light);
-    color:var(--clr-l-dark);
+    background: var(--clr-black);
+    color:var(--clr-l-white);
     margin:0;
     line-height:1.6;
     font-family: var(--ff-primary);
@@ -111,15 +112,18 @@ h3 {font-size: var(--fs-h3) }
 
 .section__title--intro strong {
     display: block;
+    color: white;
 }
 
 .section__title {
     margin-bottom: .25em;
+    color: white;
 }
 
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    color: white;
     
 }
 
