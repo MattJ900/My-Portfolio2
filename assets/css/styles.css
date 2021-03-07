@@ -9,7 +9,7 @@
 
 :root {
     --ff-primary: 'Special Elite', cursive;
-    
+    --ff-secondary:'Source Code Pro', monospace;
     --fw--reg: 300;
     --fw-bold: 900;
 
@@ -40,13 +40,22 @@ body {
     color:var(--clr-l-dark);
     margin:0;
     line-height:1.6;
-    font-family: 'Special Elite', cursive;
+    font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
 }
 
 img {
     display: block;
     max-width:100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
 }
 
 /* Typography */
@@ -61,9 +70,16 @@ h1 {font-size: var(--fs-h1) }
 h2 {font-size: var(--fs-h2) }
 h3 {font-size: var(--fs-h3) }
 
-.section__title {
+.section__title--intro {
+    font-weight: var(--fw-reg);
 
 }
+
+.section__title--intro strong {
+    display: block;
+}
+
+
 
 .section__subtitle {
     margin: 0;
@@ -71,8 +87,49 @@ h3 {font-size: var(--fs-h3) }
     
 }
 
-.section_subtitle--,
-.section_subtitle--about {
+.section__subtitle--intro,
+.section__subtitle--about {
     background: var(--clr-accent);
+    font-family: var(--ff-primary);
+    margin-bottom: 1em;
     
+}
+
+
+/* Header */
+
+nav {
+    display:none;
+}
+
+
+/* Intro Section */
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;  
+    }
+
+    .intro__img {
+        grid-area: img;                           /* Why is img not showing? */
+        min-width: 250px;
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+
+    }
 }
