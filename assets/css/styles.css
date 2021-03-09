@@ -164,7 +164,11 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+   align-items: center;
+   display: flex;
+   float: center;
+   justify-content: center;
+   
 }
 
 .nav {
